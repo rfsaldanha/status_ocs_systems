@@ -93,7 +93,7 @@ systems_list <- list(
     url = "https://www.pns.icict.fiocruz.br/"
   ),
   list(
-    name = "ICICT",
+    name = "ICICT Site",
     url = "https://www.icict.fiocruz.br/"
   ),
   list(
