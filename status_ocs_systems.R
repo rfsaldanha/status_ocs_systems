@@ -45,11 +45,11 @@ url_exists_httr2 <- function(url) {
 # Systems urls
 systems_list <- list(
   list(
-    name = "Site",
+    name = "OCS Site",
     url = "https://climaesaude.icict.fiocruz.br"
   ),
   list(
-    name = "Mapas",
+    name = "OCS Mapas",
     url = "https://mapas.climaesaude.icict.fiocruz.br"
   ),
   list(
@@ -79,6 +79,26 @@ systems_list <- list(
   list(
     name = "Baixo Tocantins Clima e Saúde Local",
     url = "https://shiny.icict.fiocruz.br/sent_micr_harmonize2"
+  ),
+  list(
+    name = "Proadess",
+    url = "https://www.proadess.icict.fiocruz.br/"
+  ),
+  list(
+    name = "PCDaS",
+    url = "https://pcdas.icict.fiocruz.br/"
+  ),
+  list(
+    name = "PNS",
+    url = "https://www.pns.icict.fiocruz.br/"
+  ),
+  list(
+    name = "ICICT",
+    url = "https://www.icict.fiocruz.br/"
+  ),
+  list(
+    name = "phpPgAdmin",
+    url = "https://phppgadmin.icict.fiocruz.br/"
   )
 )
 
@@ -90,13 +110,13 @@ for (i in 1:length(systems_list)) {
 
   if (datasus_ftp_connection) {
     ntfy_send(
-      message = glue("OCS '{name}' system is up and reachable."),
+      message = glue("'{name}' system is up and reachable."),
       tags = tags$white_check_mark,
       topic = ntfy_topic
     )
   } else {
     ntfy_send(
-      message = glue("OCS '{name}' system is not reachable."),
+      message = glue("'{name}' system is not reachable."),
       tags = tags$rotating_light,
       topic = ntfy_topic
     )
