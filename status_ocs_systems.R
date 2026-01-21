@@ -53,8 +53,8 @@ systems_list <- list(
     url = "https://mapas.climaesaude.icict.fiocruz.br"
   ),
   list(
-    name = "MonitorAr Saúde",
-    url = "https://shiny.icict.fiocruz.br/monitorarsaude"
+    name = "AlertAr Saúde",
+    url = "https://shiny.icict.fiocruz.br/alertarsaude"
   ),
   list(
     name = "FluxSUS",
